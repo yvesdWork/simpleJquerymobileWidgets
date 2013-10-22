@@ -1,0 +1,24 @@
+/* Just an icon: use jQuery Mobile's images, without fancy markup and classes */
+
+/* 1 - structure */
+.simpleIcon::after {
+    content: '';
+    display: inline-block;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+.simpleIcon {
+    display: inline-block;
+}
+/* 2 - customization */
+.simpleIcon,
+.simpleIcon::after {
+    height: 22px;
+    width: 22px;
+}
+.simpleIcon::after {
+    border-radius: 1em 1em 1em 1em;
+}
+.simpleIcon.black::after {
+    background-color: black;
+}
